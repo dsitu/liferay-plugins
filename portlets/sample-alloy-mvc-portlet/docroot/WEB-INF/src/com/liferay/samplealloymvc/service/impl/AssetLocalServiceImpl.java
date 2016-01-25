@@ -34,7 +34,8 @@ import com.liferay.samplealloymvc.service.base.AssetLocalServiceBaseImpl;
  */
 @ProviderType
 public class AssetLocalServiceImpl extends AssetLocalServiceBaseImpl {
-	/*
+
+	/**
 	 * NOTE FOR DEVELOPERS:
 	 *
 	 * Never reference this class directly. Always use {@link com.liferay.samplealloymvc.service.AssetLocalServiceUtil} to access the asset local service.

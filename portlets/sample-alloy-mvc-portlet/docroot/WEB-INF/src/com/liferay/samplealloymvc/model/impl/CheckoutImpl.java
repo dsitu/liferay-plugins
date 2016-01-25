@@ -27,11 +27,13 @@ import aQute.bnd.annotation.ProviderType;
  */
 @ProviderType
 public class CheckoutImpl extends CheckoutBaseImpl {
-	/*
+
+	/**
 	 * NOTE FOR DEVELOPERS:
 	 *
 	 * Never reference this class directly. All methods that expect a checkout model instance should use the {@link com.liferay.samplealloymvc.model.Checkout} interface instead.
 	 */
 	public CheckoutImpl() {
 	}
+
 }
