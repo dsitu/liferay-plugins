@@ -18,6 +18,7 @@ import aQute.bnd.annotation.ProviderType;
 
 import com.liferay.portal.service.persistence.BasePersistence;
 
+import com.liferay.samplealloymvc.exception.NoSuchTypeException;
 import com.liferay.samplealloymvc.model.Type;
 
 /**
@@ -69,8 +70,7 @@ public interface TypePersistence extends BasePersistence<Type> {
 	* @return the type that was removed
 	* @throws NoSuchTypeException if a type with the primary key could not be found
 	*/
-	public Type remove(long typeId)
-		throws com.liferay.samplealloymvc.exception.NoSuchTypeException;
+	public Type remove(long typeId) throws NoSuchTypeException;
 
 	public Type updateImpl(Type type);
 
@@ -81,8 +81,7 @@ public interface TypePersistence extends BasePersistence<Type> {
 	* @return the type
 	* @throws NoSuchTypeException if a type with the primary key could not be found
 	*/
-	public Type findByPrimaryKey(long typeId)
-		throws com.liferay.samplealloymvc.exception.NoSuchTypeException;
+	public Type findByPrimaryKey(long typeId) throws NoSuchTypeException;
 
 	/**
 	* Returns the type with the primary key or returns <code>null</code> if it could not be found.

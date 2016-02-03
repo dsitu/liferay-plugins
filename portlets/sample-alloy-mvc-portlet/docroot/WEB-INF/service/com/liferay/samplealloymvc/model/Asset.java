@@ -16,11 +16,12 @@ package com.liferay.samplealloymvc.model;
 
 import aQute.bnd.annotation.ProviderType;
 
+import com.liferay.portal.kernel.annotation.ImplementationClassName;
 import com.liferay.portal.kernel.util.Accessor;
 import com.liferay.portal.model.PersistedModel;
 
 /**
- * The extended model interface for the Asset service. Represents a row in the &quot;SAM_Asset&quot; database table, with each column mapped to a property of this class.
+ * The extended model interface for the Asset service. Represents a row in the &quot;SAMVC_Asset&quot; database table, with each column mapped to a property of this class.
  *
  * @author Brian Wing Shun Chan
  * @see AssetModel
@@ -28,6 +29,7 @@ import com.liferay.portal.model.PersistedModel;
  * @see com.liferay.samplealloymvc.model.impl.AssetModelImpl
  * @generated
  */
+@ImplementationClassName("com.liferay.samplealloymvc.model.impl.AssetImpl")
 @ProviderType
 public interface Asset extends AssetModel, PersistedModel {
 	/*

@@ -18,6 +18,7 @@ import aQute.bnd.annotation.ProviderType;
 
 import com.liferay.portal.service.persistence.BasePersistence;
 
+import com.liferay.samplealloymvc.exception.NoSuchAssetException;
 import com.liferay.samplealloymvc.model.Asset;
 
 /**
@@ -69,8 +70,7 @@ public interface AssetPersistence extends BasePersistence<Asset> {
 	* @return the asset that was removed
 	* @throws NoSuchAssetException if a asset with the primary key could not be found
 	*/
-	public Asset remove(long assetId)
-		throws com.liferay.samplealloymvc.exception.NoSuchAssetException;
+	public Asset remove(long assetId) throws NoSuchAssetException;
 
 	public Asset updateImpl(Asset asset);
 
@@ -81,8 +81,7 @@ public interface AssetPersistence extends BasePersistence<Asset> {
 	* @return the asset
 	* @throws NoSuchAssetException if a asset with the primary key could not be found
 	*/
-	public Asset findByPrimaryKey(long assetId)
-		throws com.liferay.samplealloymvc.exception.NoSuchAssetException;
+	public Asset findByPrimaryKey(long assetId) throws NoSuchAssetException;
 
 	/**
 	* Returns the asset with the primary key or returns <code>null</code> if it could not be found.

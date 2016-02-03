@@ -16,11 +16,12 @@ package com.liferay.samplealloymvc.model;
 
 import aQute.bnd.annotation.ProviderType;
 
+import com.liferay.portal.kernel.annotation.ImplementationClassName;
 import com.liferay.portal.kernel.util.Accessor;
 import com.liferay.portal.model.PersistedModel;
 
 /**
- * The extended model interface for the Type service. Represents a row in the &quot;SAM_Type&quot; database table, with each column mapped to a property of this class.
+ * The extended model interface for the Type service. Represents a row in the &quot;SAMVC_Type&quot; database table, with each column mapped to a property of this class.
  *
  * @author Brian Wing Shun Chan
  * @see TypeModel
@@ -28,6 +29,7 @@ import com.liferay.portal.model.PersistedModel;
  * @see com.liferay.samplealloymvc.model.impl.TypeModelImpl
  * @generated
  */
+@ImplementationClassName("com.liferay.samplealloymvc.model.impl.TypeImpl")
 @ProviderType
 public interface Type extends TypeModel, PersistedModel {
 	/*

@@ -16,11 +16,12 @@ package com.liferay.samplealloymvc.model;
 
 import aQute.bnd.annotation.ProviderType;
 
+import com.liferay.portal.kernel.annotation.ImplementationClassName;
 import com.liferay.portal.kernel.util.Accessor;
 import com.liferay.portal.model.PersistedModel;
 
 /**
- * The extended model interface for the Checkout service. Represents a row in the &quot;SAM_Checkout&quot; database table, with each column mapped to a property of this class.
+ * The extended model interface for the Checkout service. Represents a row in the &quot;SAMVC_Checkout&quot; database table, with each column mapped to a property of this class.
  *
  * @author Brian Wing Shun Chan
  * @see CheckoutModel
@@ -28,6 +29,7 @@ import com.liferay.portal.model.PersistedModel;
  * @see com.liferay.samplealloymvc.model.impl.CheckoutModelImpl
  * @generated
  */
+@ImplementationClassName("com.liferay.samplealloymvc.model.impl.CheckoutImpl")
 @ProviderType
 public interface Checkout extends CheckoutModel, PersistedModel {
 	/*

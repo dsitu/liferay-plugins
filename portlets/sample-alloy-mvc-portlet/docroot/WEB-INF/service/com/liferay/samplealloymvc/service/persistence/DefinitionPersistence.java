@@ -18,6 +18,7 @@ import aQute.bnd.annotation.ProviderType;
 
 import com.liferay.portal.service.persistence.BasePersistence;
 
+import com.liferay.samplealloymvc.exception.NoSuchDefinitionException;
 import com.liferay.samplealloymvc.model.Definition;
 
 /**
@@ -70,7 +71,7 @@ public interface DefinitionPersistence extends BasePersistence<Definition> {
 	* @throws NoSuchDefinitionException if a definition with the primary key could not be found
 	*/
 	public Definition remove(long definitionId)
-		throws com.liferay.samplealloymvc.exception.NoSuchDefinitionException;
+		throws NoSuchDefinitionException;
 
 	public Definition updateImpl(Definition definition);
 
@@ -82,7 +83,7 @@ public interface DefinitionPersistence extends BasePersistence<Definition> {
 	* @throws NoSuchDefinitionException if a definition with the primary key could not be found
 	*/
 	public Definition findByPrimaryKey(long definitionId)
-		throws com.liferay.samplealloymvc.exception.NoSuchDefinitionException;
+		throws NoSuchDefinitionException;
 
 	/**
 	* Returns the definition with the primary key or returns <code>null</code> if it could not be found.
