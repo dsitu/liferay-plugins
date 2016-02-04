@@ -19,25 +19,8 @@ import aQute.bnd.annotation.ProviderType;
 import com.liferay.samplealloymvc.service.base.TypeLocalServiceBaseImpl;
 
 /**
- * The implementation of the type local service.
- *
- * <p>
- * All custom service methods should be put in this class. Whenever methods are added, rerun ServiceBuilder to copy their definitions into the {@link com.liferay.samplealloymvc.service.TypeLocalService} interface.
- *
- * <p>
- * This is a local service. Methods of this service will not have security checks based on the propagated JAAS credentials because this service can only be accessed from within the same VM.
- * </p>
- *
  * @author Brian Wing Shun Chan
- * @see TypeLocalServiceBaseImpl
- * @see com.liferay.samplealloymvc.service.TypeLocalServiceUtil
  */
 @ProviderType
 public class TypeLocalServiceImpl extends TypeLocalServiceBaseImpl {
-
-	/**
-	 * NOTE FOR DEVELOPERS:
-	 *
-	 * Never reference this class directly. Always use {@link com.liferay.samplealloymvc.service.TypeLocalServiceUtil} to access the type local service.
-	 */
 }
